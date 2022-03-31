@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hotel/home.dart';
 import 'package:hotel/detail.dart';
-// import 'package:hotel/home.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hotel/template.dart';
 import 'package:hotel/detail.dart';
-import 'package:hotel/data_hotel.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -41,9 +41,14 @@ class HomePage extends StatelessWidget {
                         SizedBox(
                           height: 10,
                         ),
-                        Text(
-                          "Bintang ${hotel.stars}",
-                          style: TextStyle(fontSize: 14.0),
+                        Row(
+                          children: <Widget>[
+                            for (var i=0; i<hotel.stars; i++)
+                            Icon(
+                              Icons.star,
+                              color: Colors.yellow,
+                            ),
+                          ]
                         ),
                         SizedBox(
                           height: 10,
