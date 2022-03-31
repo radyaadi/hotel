@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotel/template.dart';
+import 'package:hotel/data_hotel.dart';
 import 'package:hotel/detail.dart';
 
 class HomePage extends StatelessWidget {
@@ -41,14 +41,8 @@ class HomePage extends StatelessWidget {
                         SizedBox(
                           height: 10,
                         ),
-                        Row(
-                          children: <Widget>[
-                            for (var i=0; i<hotel.stars; i++)
-                            Icon(
-                              Icons.star,
-                              color: Colors.yellow,
-                            ),
-                          ]
+                        Text(
+                          "Bintang ${hotel.stars}",
                         ),
                         SizedBox(
                           height: 10,
